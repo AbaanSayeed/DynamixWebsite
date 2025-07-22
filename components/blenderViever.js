@@ -5,32 +5,26 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
-export default function BlenderViewer() {
+export default function BlenderViewer({url}) {
   const mountRef = useRef(null);
 
   useEffect(() => {
+    const mount = mountRef.current;
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0xeeeeee);
 
-    const camera = new THREE.PerspectiveCamera(
-      75,
-      window.innerWidth / window.innerHeight,
-      0.1,
-      1000
-    );
+    const camera = new THREE.PerspectiveCamera(75, mount.clientWidth / mount.clientHeight, 0.1, 1000);
     camera.position.set(0, 1, 5);
 
     const renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    mountRef.current.appendChild(renderer.domElement);
+    renderer.setSize(mount.clientWidth, mount.clientHeight);
+    mount.appendChild(renderer.domElement);
 
-    // Load model
     const loader = new GLTFLoader();
-    loader.load('/models/FixedDrone.glb', (gltf) => {
+    loader.load(`/models/${url}`, (gltf) => {
       scene.add(gltf.scene);
     });
 
-    // Lighting (basic 3-point lighting)
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
     scene.add(ambientLight);
 
@@ -38,34 +32,37 @@ export default function BlenderViewer() {
     directionalLight.position.set(2, 5, 5);
     scene.add(directionalLight);
 
-    // Optional: camera controls
     const controls = new OrbitControls(camera, renderer.domElement);
 
-    // Resize handling
     const handleResize = () => {
-      camera.aspect = window.innerWidth / window.innerHeight;
+      const width = mount.clientWidth;
+      const height = mount.clientHeight;
+      renderer.setSize(width, height);
+      camera.aspect = width / height;
       camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
     };
     window.addEventListener('resize', handleResize);
 
-    // Animation loop
     const animate = () => {
       requestAnimationFrame(animate);
-      controls.update(); // not needed if no interactivity
+      controls.update();
       renderer.render(scene, camera);
     };
     animate();
 
     return () => {
-  if (mountRef.current && renderer.domElement) {
-    mountRef.current.removeChild(renderer.domElement);
-  }
-  window.removeEventListener('resize', handleResize);
-  renderer.dispose(); // cleanup Three.js renderer
-};
-
+      if (mount && renderer.domElement) {
+        mount.removeChild(renderer.domElement);
+      }
+      window.removeEventListener('resize', handleResize);
+      renderer.dispose();
+    };
   }, []);
 
-  return <div ref={mountRef} />;
+  return (
+    <div
+      ref={mountRef}
+      className='w-full h-full rounded-2xl'
+    />
+  );
 }

@@ -59,7 +59,7 @@ export default function HomePage() {
               Synaptium is a revolutionary energy compound powering next-gen underwater vehicles.
 Harnessing extreme efficiency and adaptive magnetic shielding, Synaptium makes deep-sea exploration safer, cleaner, and limitless.
             </p>
-            <Link href="/collector" className="text-green-400 hover:underline">
+            <Link href="/about" className="text-green-400 hover:underline">
               Learn about it →
             </Link>
           </div>
@@ -69,7 +69,7 @@ Harnessing extreme efficiency and adaptive magnetic shielding, Synaptium makes d
       <section id="learn-more" className="py-20 px-6 md:px-20 bg-gray-900">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
           <Image
-            src="/extractor.png" // Placeholder — you can update with your render
+            src="/extractorV2.png" // Placeholder — you can update with your render
             alt="Extractor"
             width={500}
             height={500}
