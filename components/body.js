@@ -11,7 +11,7 @@ export default function HomePage() {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       // Adjust fade speed by tweaking denominator
-      const opacity = Math.min(scrollY / 300, 0.4); 
+      const opacity = Math.min(scrollY / 300, 0.85); 
       setOverlayOpacity(opacity);
     };
 
@@ -51,11 +51,11 @@ export default function HomePage() {
             alt="synaptium"
             width={500}
             height={500}
-            className="rounded-xl shadow-lg"
+            className="rounded-xl shadow-lg "
           />
           <div>
             <h2 className="text-4xl font-bold mb-4">Synaptium</h2>
-            <p className="text-gray-300 mb-4">
+            <p className="text-gray-300 mb-4 mr-5" >
               Synaptium is a revolutionary energy compound powering next-gen underwater vehicles.
 Harnessing extreme efficiency and adaptive magnetic shielding, Synaptium makes deep-sea exploration safer, cleaner, and limitless.
             </p>
