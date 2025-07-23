@@ -44,7 +44,23 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
-<section className="py-20 px-6 md:px-20">
+      {/* FEATURE: ASUVs */}
+<section className="py-20 px-6 md:px-20 bg-black">
+  <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
+   
+    <div>
+      <h2 className="text-4xl font-bold mb-4 justify-center text-center">What Are ASUVs?</h2>
+      <p className="text-gray-300 mb-4">
+        Aquatic Synaptium Utility Vehicles (ASUVs) are advanced deep-sea robotic systems powered by Synaptium.
+        Engineered to operate under extreme oceanic pressure, ASUVs combine autonomous navigation, adaptive shielding,
+        and smart AI cores to conduct sustainable mining, terrain mapping, and exploration at previously unreachable depths.
+      </p>
+      
+    </div>
+  </div>
+</section>
+
+<section className="py-20 px-6 md:px-20 bg-gray-900" > 
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row-reverse items-center gap-10">
           <Image
             src="/synaptium.png"
@@ -66,7 +82,7 @@ Harnessing extreme efficiency and adaptive magnetic shielding, Synaptium makes d
         </div>
       </section>
       {/* FEATURE: Extractor */}
-      <section id="learn-more" className="py-20 px-6 md:px-20 bg-gray-900">
+      <section id="learn-more" className="py-20 px-6 md:px-20 bg-black">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
           <Image
             src="/extractorV2.png" // Placeholder — you can update with your render
@@ -88,32 +104,10 @@ Harnessing extreme efficiency and adaptive magnetic shielding, Synaptium makes d
       </section>
 
       {/* FEATURE: Collector */}
-      <section className="py-20 px-6 md:px-20">
+      <section className="py-20 px-6 md:px-20 bg-gray-900">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row-reverse items-center gap-10">
           <Image
-            src="/collector.png"
-            alt="Collector"
-            width={500}
-            height={500}
-            className="rounded-xl shadow-lg"
-          />
-          <div>
-            <h2 className="text-4xl font-bold mb-4">Collector AUV</h2>
-            <p className="text-gray-300 mb-4">
-              After extraction, our AI-powered Collector vacuums and filters raw materials with minimal ocean disruption — and returns autonomously to the base.
-            </p>
-            <Link href="/collector" className="text-green-400 hover:underline">
-              Explore the tech →
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* FEATURE: Swarm Drones */}
-      <section className="py-20 px-6 md:px-20 bg-gray-900">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
-          <Image
-            src="/swarms.png"
+            src="/swarm.png"
             alt="Swarm Drones"
             width={500}
             height={500}
@@ -131,9 +125,11 @@ Harnessing extreme efficiency and adaptive magnetic shielding, Synaptium makes d
         </div>
       </section>
 
+      {/* FEATURE: Swarm Drones */}
+     
       {/* CTA */}
-      <section className="py-20 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      <section className="py-20 text-center bg-black">
+        <h2 className="text-3xl md:text-4xl  font-bold mb-6">
           Ready to Dive into the Future?
         </h2>
         <Link
