@@ -32,27 +32,27 @@ export default function Navbar(){
             <div className="hidden md:flex items-center space-x-1">
               <Link 
                 href="/" 
-                className={`py-5 px-3 ${isActive('/') ? 'text-green-400 font-bold' : 'text-gray-100'} hover:text-green-400`}
+                className={`py-5 px-3 ${isActive('/') ? 'text-indigo-400 font-bold' : 'text-gray-100'} hover:text-indigo-400`}
               >
                 Home
               </Link>
              <Link 
                 href="/about" 
-                className={`py-5 px-3 ${isActive('/about') ? 'text-green-400 font-bold' : 'text-gray-100'} hover:text-green-400`}
+                className={`py-5 px-3 ${isActive('/about') ? 'text-indigo-400 font-bold' : 'text-gray-100'} hover:text-indigo-400`}
              >
                 About
              </Link>
            
              <Link 
                 href="/extractor" 
-                className={`py-5 px-3 ${isActive('/extractor') ? 'text-green-400 font-bold' : 'text-gray-100'} hover:text-green-400`}
+                className={`py-5 px-3 ${isActive('/extractor') ? 'text-indigo-400 font-bold' : 'text-gray-100'} hover:text-indigo-400`}
              >
                 Extractor
              </Link>
              
              <Link 
                 href="/swarms" 
-                className={`py-5 px-3 ${isActive('/swarms') ? 'text-green-400 font-bold' : 'text-gray-100'} hover:text-green-400`}
+                className={`py-5 px-3 ${isActive('/swarms') ? 'text-indigo-400 font-bold' : 'text-gray-100'} hover:text-indigo-400`}
              >
                 Swarms
              </Link>
@@ -76,26 +76,26 @@ export default function Navbar(){
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
         <Link 
           href="/" 
-          className={`block py-2 px-4 text-sm ${isActive('/') ? 'bg-green-600 text-white' : 'text-gray-100'} hover:bg-gray-700`}
+          className={`block py-2 px-4 text-sm ${isActive('/') ? 'bg-indigo-600 text-white' : 'text-gray-100'} hover:bg-gray-700`}
         >
           Home
         </Link>
         <Link 
           href="/about" 
-          className={`block py-2 px-4 text-sm ${isActive('/about') ? 'bg-green-600 text-white' : 'text-gray-100'} hover:bg-gray-700`}
+          className={`block py-2 px-4 text-sm ${isActive('/about') ? 'bg-indigo-600 text-white' : 'text-gray-100'} hover:bg-gray-700`}
         >
           About
         </Link>
         <Link 
                 href="/extractor" 
-                className={`py-5 px-3 ${isActive('/extractor') ? 'text-green-400 font-bold' : 'text-gray-100'} hover:text-green-400`}
+                className={`py-5 px-3 ${isActive('/extractor') ? 'text-indigo-400 font-bold' : 'text-gray-100'} hover:text-indigo-400`}
              >
                 Extractor
              </Link>
              
              <Link 
                 href="/swarms" 
-                className={`py-5 px-3 ${isActive('/swarms') ? 'text-green-400 font-bold' : 'text-gray-100'} hover:text-green-400`}
+                className={`py-5 px-3 ${isActive('/swarms') ? 'text-indigo-400 font-bold' : 'text-gray-100'} hover:text-indigo-400`}
              >
                 Swarms
              </Link>

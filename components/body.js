@@ -38,7 +38,7 @@ export default function HomePage() {
           </p>
           <Link
             href="#learn-more"
-            className="bg-green-500 text-black px-6 py-3 rounded-xl hover:bg-green-400 transition"
+            className="bg-indigo-700 text-gray-200 px-6 py-3 rounded-xl hover:bg-indigo-600 transition"
           >
             Learn More
           </Link>
@@ -75,7 +75,7 @@ export default function HomePage() {
               Synaptium is a revolutionary energy compound powering next-gen underwater vehicles.
 Harnessing extreme efficiency and adaptive magnetic shielding, Synaptium makes deep-sea exploration safer, cleaner, and limitless.
             </p>
-            <Link href="/about" className="text-green-400 hover:underline">
+            <Link href="/about" className="text-indigo-400 hover:underline">
               Learn about it →
             </Link>
           </div>
@@ -96,7 +96,7 @@ Harnessing extreme efficiency and adaptive magnetic shielding, Synaptium makes d
             <p className="text-gray-300 mb-4">
               Built with titanium and powered by Synaptium, the Extractor pierces deep-sea bedrock with precision drilling and magnetic pressure shielding.
             </p>
-            <Link href="/extractor" className="text-green-400 hover:underline">
+            <Link href="/extractor" className="text-indigo-400 hover:underline">
               See how it works →
             </Link>
           </div>
@@ -118,7 +118,7 @@ Harnessing extreme efficiency and adaptive magnetic shielding, Synaptium makes d
             <p className="text-gray-300 mb-4">
               Our titanium-built mini drones use Synaptium shielding and GPS mapping to create real-time ocean floor maps before deployment.
             </p>
-            <Link href="/swarms" className="text-green-400 hover:underline">
+            <Link href="/swarms" className="text-indigo-400 hover:underline">
               Meet the Swarm →
             </Link>
           </div>
@@ -134,7 +134,7 @@ Harnessing extreme efficiency and adaptive magnetic shielding, Synaptium makes d
         </h2>
         <Link
           href="/contact"
-          className="bg-green-500 text-black px-6 py-3 rounded-xl hover:bg-green-400 transition"
+          className="bg-indigo-700 text-gray-200 px-6 py-3 rounded-xl hover:bg-indigo-600 transition"
         >
           Join the Mission
         </Link>

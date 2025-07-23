@@ -72,6 +72,9 @@ export default function Swarms() {
         <div className="w-full flex justify-center">
           <div className="flex flex-col md:flex-row gap-8 max-w-6xl w-full justify-center items-center p-4">
             <div className="w-full md:w-1/2 h-[400px] bg-black rounded-xl">
+              <BlenderViewer url="swarm2.glb" />
+            </div>
+            <div className="w-full md:w-1/2 h-[400px] bg-black rounded-xl">
               <BlenderViewer url="swarm1.glb" />
             </div>
           </div>
