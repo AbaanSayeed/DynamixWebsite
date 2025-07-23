@@ -85,7 +85,7 @@ Harnessing extreme efficiency and adaptive magnetic shielding, Synaptium makes d
       <section id="learn-more" className="py-20 px-6 md:px-20 bg-black">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
           <Image
-            src="/extractorV2.png" // Placeholder — you can update with your render
+            src="/ExtractorV2.png" // Placeholder — you can update with your render
             alt="Extractor"
             width={500}
             height={500}
@@ -133,10 +133,10 @@ Harnessing extreme efficiency and adaptive magnetic shielding, Synaptium makes d
           Ready to Dive into the Future?
         </h2>
         <Link
-          href="/contact"
+          href="/about"
           className="bg-indigo-700 text-gray-200 px-6 py-3 rounded-xl hover:bg-indigo-600 transition"
         >
-          Join the Mission
+          Know More
         </Link>
       </section>
     </main>
