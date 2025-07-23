@@ -49,12 +49,7 @@ export default function Navbar(){
              >
                 Extractor
              </Link>
-             <Link 
-                href="/collector" 
-                className={`py-5 px-3 ${isActive('/collector') ? 'text-green-400 font-bold' : 'text-gray-100'} hover:text-green-400`}
-             >
-                Collector
-             </Link>
+             
              <Link 
                 href="/swarms" 
                 className={`py-5 px-3 ${isActive('/swarms') ? 'text-green-400 font-bold' : 'text-gray-100'} hover:text-green-400`}
@@ -91,7 +86,19 @@ export default function Navbar(){
         >
           About
         </Link>
-        
+        <Link 
+                href="/extractor" 
+                className={`py-5 px-3 ${isActive('/extractor') ? 'text-green-400 font-bold' : 'text-gray-100'} hover:text-green-400`}
+             >
+                Extractor
+             </Link>
+             
+             <Link 
+                href="/swarms" 
+                className={`py-5 px-3 ${isActive('/swarms') ? 'text-green-400 font-bold' : 'text-gray-100'} hover:text-green-400`}
+             >
+                Swarms
+             </Link>
      
       </div>
     </nav>
